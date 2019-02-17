@@ -1,0 +1,23 @@
+﻿@*@section SPAViews {
+        @Html.Partial("_Home")
+    }
+    @section Scripts{
+        @Scripts.Render("~/bundles/knockout")
+        @Scripts.Render("~/bundles/app")
+    }*@
+
+
+@{
+    Layout = null;
+}
+<html>
+<head>
+    <base href="/">
+</head>
+<body>
+
+    <app-root></app-root>
+
+    @Scripts.Render("~/bundles/angular");
+</body>
+</html>
